@@ -10,13 +10,38 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
      ```shell
        git clone https://github.com/dariagridina/military-vehicle-detection.git
      ```
-2. **Install Requirements**
-   - Navigate to the cloned directory and install the necessary requirements:
+
+2. **Create the Virtual Environment:**
+   - Navigate to the cloned directory and run the following command to create a new virtual environment named `venv`:
      ```shell
      cd military-vehicle-detection
+     python -m venv venv
+     ```
+     or 
+     ```shell
+     python3 -m venv venv
+     ```
+     This command creates a directory named `venv` in your project folder containing the virtual environment.
+
+
+3. **Activate the Virtual Environment:**
+   - On Windows, activate the environment using:
+     ```cmd
+     venv\Scripts\activate
+     ```
+   - On macOS and Linux, use:
+     ```shell
+     source venv/bin/activate
+     ```
+     Your command prompt should now indicate that the virtual environment is active.
+
+**Note:** Ensure that Python is installed on your system before creating a virtual environment. The environment can be deactivated anytime by running the `deactivate` command.
+
+4. **Install Requirements**
+   - Install the necessary requirements:
+     ```shell
      pip install -r requirements.txt
      ```
-
 ## Dataset Acquisition
 - **Option 1: Download directly from Roboflow (Recommended for Roboflow Account Holders)**
   - If you have a Roboflow account, you can directly download the dataset using your API key.
