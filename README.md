@@ -7,18 +7,16 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 ## Installation
 1. **Clone the Repository**
    - Begin by cloning the project repository from GitHub:
+     
      ```shell
      git clone https://github.com/dariagridina/military-vehicle-detection.git
      ```
 
 2. **Create the Virtual Environment:**
    - Navigate to the cloned directory and run the following command to create a new virtual environment named `venv`:
+
      ```shell
      cd military-vehicle-detection
-     python -m venv venv
-     ```
-     or 
-     ```shell
      python3 -m venv venv
      ```
      This command creates a directory named `venv` in your project folder containing the virtual environment.
@@ -26,10 +24,12 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 
 3. **Activate the Virtual Environment:**
    - On Windows, activate the environment using:
+   
      ```cmd
      venv\Scripts\activate
      ```
    - On macOS and Linux, use:
+   
      ```shell
      source venv/bin/activate
      ```
@@ -37,8 +37,10 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 
 **Note:** Ensure that Python is installed on your system before creating a virtual environment. The environment can be deactivated anytime by running the `deactivate` command.
 
+
 4. **Install Requirements**
    - Install the necessary requirements:
+   
      ```shell
      pip install -r requirements.txt
      ```
@@ -46,13 +48,16 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 - **Option 1: Download directly from Roboflow (Recommended for Roboflow Account Holders)**
   - If you have a Roboflow account, you can directly download the dataset using your API key.
   - Uncomment and run the provided script in the `trining_pipeline.ipynb`. Replace `<your-api-key>` with your actual Roboflow API key:
+  
     ```python
     rf = Roboflow(api_key="<your-api-key>")
     project = rf.workspace("vgtu-n8zmy").project("military-vehicle")
     dataset = project.version(6).download("yolov8")
     ```
 - **Option 2: Download from Google Drive (Alternative Option)**
+
   - If you do not have a Roboflow account, you can download the dataset from Google Drive. To do that run this script:
+  
     ```shell
     gdown 'https://drive.google.com/uc?id=1MYhcTICu2Zz-T7wqBfWsaR57j8TingvY'
     unzip military-vehicle-6.zip
@@ -62,6 +67,7 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 ## Training the Model
 1. **Start Jupyter Notebook Server**
    - Before accessing the training pipeline, start the Jupyter Notebook server:
+   
      ```shell
      jupyter notebook
      ```
@@ -79,6 +85,7 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 ## Testing the Model
 1. **Download Model Checkpoints**
    - Download the trained model checkpoints from Google Drive. Run this script in `test.ipynb` to download:
+   
     ```shell
     gdown 'https://drive.google.com/uc?id=1MDmKKqYyxjqgnU8b_HMauUyxvKBWa1uu'
     unzip checkpoints.zip
