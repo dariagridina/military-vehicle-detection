@@ -57,11 +57,18 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 - **Option 2: Download from Google Drive (Alternative Option)**
 
   - If you do not have a Roboflow account, you can download the dataset from Google Drive. To do that run this script:
+  - On macOS and Linux, use:
   
     ```shell
     gdown 'https://drive.google.com/uc?id=1MYhcTICu2Zz-T7wqBfWsaR57j8TingvY'
     unzip military-vehicle-6.zip
     rm -rf military-vehicle-6.zip
+    ```
+  - On Windows, use:
+    ```shell
+    gdown https://drive.google.com/uc?id=1MYhcTICu2Zz-T7wqBfWsaR57j8TingvY
+    tar -xf military-vehicle-6.zip
+    del military-vehicle-6.zip
     ```
 
 ## Training the Model
@@ -91,11 +98,17 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 
 2. **Download Model Checkpoints**
    - Download the trained model checkpoints from Google Drive. Run the script in `test.ipynb` cell to download:
-   
+   - On macOS and Linux, use:
     ```shell
     gdown 'https://drive.google.com/uc?id=1MDmKKqYyxjqgnU8b_HMauUyxvKBWa1uu'
     unzip checkpoints.zip
     rm -rf checkpoints.zip
+   ```
+   - On Windows, use: 
+   ```shell
+    gdown https://drive.google.com/uc?id=1MDmKKqYyxjqgnU8b_HMauUyxvKBWa1uu
+    tar -xf checkpoints.zip
+    del checkpoints.zip
    ```
 ## Additional Notes
 - Ensure you follow the steps in sequence to avoid any issues.
