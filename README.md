@@ -91,13 +91,8 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 
 ## Testing the Model
 
-1. **Run the Testing Pipeline**
-   - Open the `test.ipynb` notebook.
-   - Follow the instructions in the notebook to load the model checkpoints and run the tests.
-
-
-2. **Download Model Checkpoints**
-   - Download the trained model checkpoints from Google Drive. Run the script in `test.ipynb` cell to download:
+1. **Download Model Checkpoints**
+   - Download the trained model checkpoints from Google Drive. Run the script to download:
    - On macOS and Linux, use:
     ```shell
     gdown 'https://drive.google.com/uc?id=1MDmKKqYyxjqgnU8b_HMauUyxvKBWa1uu'
@@ -110,6 +105,11 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
     tar -xf checkpoints.zip
     del checkpoints.zip
    ```
+
+2. **Run the Testing Pipeline**
+   - Open the `test.ipynb` notebook.
+   - Follow the instructions in the notebook to load the model checkpoints and run the tests.
+   
 ## Additional Notes
 - Ensure you follow the steps in sequence to avoid any issues.
 - If you encounter any problems or have suggestions, feel free to open an issue in the GitHub repository.
