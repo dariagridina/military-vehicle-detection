@@ -8,7 +8,7 @@ It includes a comprehensive training pipeline, as well as a testing pipeline to 
 1. **Clone the Repository**
    - Begin by cloning the project repository from GitHub:
      ```shell
-       git clone https://github.com/dariagridina/military-vehicle-detection.git
+     git clone https://github.com/dariagridina/military-vehicle-detection.git
      ```
 
 2. **Create the Virtual Environment:**
